@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	</head>
+	<body class="bg bg-dark">
+		
+        <div class="mt-5 mx-auto container bg-white p-4 rounded">
+            <p class="display-6 mb-3"><b>< </b>Languages <b>/></b></p>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        Creator
+                    </td>
+                    <td>
+                        Version
+                    </td>
+                    <td>
+                        Action
+                    </td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="link-primary">Java</a>
+                        </td>
+                        <td>
+                            Creator
+                        </td>
+                        <td>
+                            Version
+                        </td>
+                        <td>
+                            <a href="#" class="link-primary">Edit</a> |  <a href="#" class="link-secondary">Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="link-primary">Java</a>
+                        </td>
+                        <td>
+                            Creator
+                        </td>
+                        <td>
+                            Version
+                        </td>
+                        <td>
+                            <a href="#" class="link-primary">Edit</a> |  <a href="#" class="link-secondary">Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="link-primary">Java</a>
+                        </td>
+                        <td>
+                            Creator
+                        </td>
+                        <td>
+                            Version
+                        </td>
+                        <td>
+                            <a href="#" class="link-primary">Edit</a> |  <a href="#" class="link-secondary">Remove</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="my-3"><b>Add new language:</b></p>
+            <form:formn action="" methods="post" modelAtrribute="language">
+                <div class="row mb-3">
+                    <form:label path="name" class="col-sm-2 col-form-label">Name:</form:label>
+                    <div class="col-sm-10">
+                    <form:input path="name">
+                    <form:errors path="name"/>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <form:label path="creator" class="col-sm-2 col-form-label">Creator:</form:label>
+                    <div class="col-sm-10">
+                    <form:input path="creator">
+                    <form:errors path="creator"/>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <form:label path="currentVersion" class="col-sm-2 col-form-label">Current Version:</form:label>
+                    <div class="col-sm-10">
+                    <form:input path="currentVersion">
+                    <form:errors path="currentVersion"/>
+                    </div>
+                </div>
+            </form:form>
+            <button type="submit" class="btn btn-success">Submit</button>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</body>
+</html>
