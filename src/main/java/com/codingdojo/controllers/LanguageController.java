@@ -45,10 +45,12 @@ public class LanguageController {
 	}
 	
 	@RequestMapping("/languages/edit/{id}")
-	public String edit(@PathVariable("id") Long id, Model model, @ModelAttribute("language") Language language) {
+	public String edit(@PathVariable("id") Long id, 
+						Model model, 
+						@ModelAttribute("language") Language language) {
 		Language lan = languageService.findLan(id);
 		if (lan == null) {
-			return "redirect:/";
+			return "redirect:/languages";
 		} else {
 			model.addAttribute("lan", lan);
 			return "edit.jsp";
@@ -74,7 +76,7 @@ public class LanguageController {
 	public String show (@PathVariable("id") Long id, Model model) {
 		Language lan = languageService.findLan(id);
 		if (lan == null) {
-			return "redirect:/l";
+			return "redirect:/languages";
 		} else {
 			model.addAttribute("lan", lan);
 			return "language.jsp";
